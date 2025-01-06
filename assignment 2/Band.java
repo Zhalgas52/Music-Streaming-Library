@@ -20,7 +20,6 @@ class Band extends Artist {
         this.membersCount = membersCount;
     }
 
-    @Override
     public String toString() {
         return super.toString() + ", Members: " + membersCount;
     }
