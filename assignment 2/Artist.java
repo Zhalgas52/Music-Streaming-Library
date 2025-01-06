@@ -29,12 +29,10 @@ public class Artist {
         this.musicType = musicType;
     }
 
-    @Override
     public String toString() {
         return "Artist: " + name + ", Genre: " + musicType;
     }
 
-    @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
@@ -42,7 +40,6 @@ public class Artist {
         return Objects.equals(name, artist.name) && Objects.equals(musicType, artist.musicType);
     }
 
-    @Override
     public int hashCode() {
         return Objects.hash(name, musicType);
     }
